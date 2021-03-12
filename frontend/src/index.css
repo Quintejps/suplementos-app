@@ -21,7 +21,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-areas: "header" "main" "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
@@ -73,6 +73,9 @@ li {
   margin-top: 1rem;
 }
 
+input,
+select,
+textarea,
 button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -81,10 +84,16 @@ button {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
   background-color: #f8f8f8;
   cursor: pointer;
 }
 
+input:hover,
+select:hover,
+textarea:hover,
 button:hover {
   border: 0.1rem #404040 solid;
 }
@@ -161,7 +170,7 @@ img.large {
   padding: 1rem;
 }
 
-.card-body>* {
+.card-body > * {
   margin-bottom: 0.5rem;
 }
 
